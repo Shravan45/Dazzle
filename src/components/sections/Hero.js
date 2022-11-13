@@ -5,6 +5,7 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import ReactPlayer from "react-player"
 
 const propTypes = {
   ...SectionProps.types
@@ -68,6 +69,13 @@ const Hero = ({
             </div>
            
           </div>
+          <div>
+      <ReactPlayer
+        url="https://youtu.be/BeIyZMShIEA"
+        width={896}
+        height={504}
+      />
+    </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
             <a
               data-video="https://youtu.be/BeIyZMShIEA"

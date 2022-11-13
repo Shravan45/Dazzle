@@ -56,8 +56,16 @@ const Header = ({
     document.body.classList.remove('off-nav-is-active');
     nav.current && (nav.current.style.maxHeight = null);
     setIsactive(false);
+    // setLibraryContract();
   }
-
+/*
+  async function setLibraryContract() {
+    const bookRentContract = await window.tronWeb.contract().at('TSXb2QPJKtxdfi93nPjYcgG8zP4ey8pxoQ');
+    const x = bookRentContract.favoriteNumber().send();
+    
+    console.log(x);
+  }
+*/
   const keyPress = (e) => {
     isActive && e.keyCode === 27 && closeMenu();
   }
