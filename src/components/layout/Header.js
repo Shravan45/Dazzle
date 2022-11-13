@@ -121,7 +121,7 @@ const Header = ({
                       <Link to="/rankings" onClick={closeMenu}>Rankings</Link>
                     </li>
                     <li>
-                      <Link to="/featureArtists" onClick={closeMenu}>Featured Artists</Link>
+                      <Link to="/featuredArtists" onClick={closeMenu}>Featured Artists</Link>
                     </li>
                     <li>
                       <Link to="/donate" onClick={closeMenu}>Donate</Link>

@@ -1,8 +1,19 @@
 import React, { useRef, useEffect } from 'react';
-import { useLocation, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useLocation
+} from "react-router-dom";
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
+import Explore from './components/pages/Explore';
+import Leagues from './components/pages/Leagues';
+import Rankings from './components/pages/Rankings';
+import Donate from './components/pages/Donate';
+import FeaturedArtists from './components/pages/FeaturedArtists';
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
@@ -37,6 +48,21 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <Route path="/explore">
+            <Explore />
+          </Route>
+          <Route path="/leagues">
+            <Leagues />
+          </Route>
+          <Route path="/rankings">
+            <Rankings />
+          </Route>
+          <Route path="/featuredArtists">
+            <FeaturedArtists />
+          </Route>
+          <Route path="/donate">
+            <Donate />
+          </Route>
         </Switch>
       )} />
   );
