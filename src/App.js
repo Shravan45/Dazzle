@@ -14,6 +14,8 @@ import Leagues from './components/pages/Leagues';
 import Rankings from './components/pages/Rankings';
 import Donate from './components/pages/Donate';
 import FeaturedArtists from './components/pages/FeaturedArtists';
+import Artist from './components/pages/Artist';
+
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
@@ -60,8 +62,8 @@ const App = () => {
           <Route path="/featuredArtists">
             <FeaturedArtists />
           </Route>
-          <Route path="/donate">
-            <Donate />
+          <Route path="/artist/1">
+            <Artist />
           </Route>
         </Switch>
       )} />

@@ -66,6 +66,7 @@ const Testimonial = ({
               <input type="text" id="lname" name="lastname" placeholder="John Doe" />
 
               <label for="lname">Amount</label>
+              <br></br>
               <input type="number" id="lname" name="lastname" placeholder="$0.00" />
             
               <input type="submit" value="Donate" />
