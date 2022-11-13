@@ -70,7 +70,7 @@ const Hero = ({
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
             <a
-              data-video="https://vimeo.com/770424341"
+              data-video="https://youtu.be/BeIyZMShIEA"
               href="#0"
               aria-controls="video-modal"
               onClick={openModal}
@@ -87,7 +87,7 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://vimeo.com/770424341"
+            video="https://youtu.be/BeIyZMShIEA"
             videoTag="iframe" />
         </div>
       </div>
