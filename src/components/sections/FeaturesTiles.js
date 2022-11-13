@@ -45,12 +45,12 @@ const FeaturesTiles = ({
 
   const sectionHeader = {
     title: 'Rankings',
-    paragraph: 'Put a one liner here about how this will be an immersive experience for the users.'
+    paragraph: 'See top performing artists this week.'
   };
 
   const leaguesHeader = {
     title: 'Leagues',
-    paragraph: 'Put a one liner here about what leagues are.'
+    paragraph: 'Compete with other Dazzle users to build the top performing portfolio.'
   };
 
   return (
@@ -67,29 +67,29 @@ const FeaturesTiles = ({
                   <tr>
                       <th>Artist</th>
                       <th>Rank</th>
-                      <th>Latest album</th>
+                      <th>Weekly Gains (%)</th>
                   </tr>
               </thead>
               <tbody>
                   <tr>
                       <td>Jack Harlow</td>
                       <td>1</td>
-                      <td>xyz</td>
+                      <td>+35%</td>
                   </tr>
                   <tr className="active-row">
                       <td>Martin Garrix</td>
                       <td>2</td>
-                      <td>xyz</td>
+                      <td>+22%</td>
                   </tr>
                   <tr className="active-row">
                       <td>Taylor Swift</td>
                       <td>3</td>
-                      <td>xyz</td>
+                      <td>+18%</td>
                   </tr>
                   <tr className="active-row">
                       <td>Harry Styles</td>
                       <td>4</td>
-                      <td>xyz</td>
+                      <td>+12%</td>
                   </tr>
               </tbody>
             </table>
@@ -117,7 +117,6 @@ const FeaturesTiles = ({
                 Pop Kings
                 </h4>
               <p className="m-0 text-sm">
-                Find out who's the best in the biggest music genre.
                 </p>
             </div>
           </div>
@@ -139,7 +138,6 @@ const FeaturesTiles = ({
                 Jazz Supremes
                 </h4>
               <p className="m-0 text-sm">
-                Prove who has the most groove.
                 </p>
             </div>
           </div>
@@ -161,7 +159,6 @@ const FeaturesTiles = ({
                     Rookie Championship
                     </h4>
                   <p className="m-0 text-sm">
-                    Perfect for your first league.
                     </p>
                 </div>
               </div>
@@ -183,7 +180,6 @@ const FeaturesTiles = ({
                     UK's top
                     </h4>
                   <p className="m-0 text-sm">
-                    Explore the UK's hottest artists right now.
                     </p>
                 </div>
               </div>
@@ -205,7 +201,6 @@ const FeaturesTiles = ({
                     Grammy League
                     </h4>
                   <p className="m-0 text-sm">
-                    These artists harken back to the classics.
                     </p>
                 </div>
               </div>
@@ -224,10 +219,9 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
+                    Death Metal
                     </h4>
                   <p className="m-0 text-sm">
-                    Find the best music for maxing out your productivity.
                     </p>
                 </div>
               </div>

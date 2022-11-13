@@ -52,7 +52,7 @@ const Leagues = ({
 
   const createHeader = {
     title: 'Create League',
-    paragraph: 'Start a league of your own.'
+    paragraph: 'Invite friends, Add your tags, Set a timeline.'
   };
 
   const yourHeader = {
@@ -62,7 +62,7 @@ const Leagues = ({
 
   const leaguesHeader = {
     title: 'Leagues',
-    paragraph: 'Contests in curation.'
+    paragraph: 'Compare your rankings with the fellow Dazzlers in your league.'
   };
 
   const sectionHeader = {
@@ -142,7 +142,6 @@ const Leagues = ({
                 Pop Kings
                 </h4>
               <p className="m-0 text-sm">
-                Find out who's the best in the biggest music genre.
                 </p>
             </div>
           </div>
@@ -164,7 +163,6 @@ const Leagues = ({
                 Jazz Supremes
                 </h4>
               <p className="m-0 text-sm">
-                Prove who has the most groove.
                 </p>
             </div>
           </div>
@@ -186,7 +184,6 @@ const Leagues = ({
                     Rookie Championship
                     </h4>
                   <p className="m-0 text-sm">
-                    Perfect for your first league.
                     </p>
                 </div>
               </div>
@@ -208,7 +205,6 @@ const Leagues = ({
                     UK's top
                     </h4>
                   <p className="m-0 text-sm">
-                    Explore the UK's hottest artists right now.
                     </p>
                 </div>
               </div>
@@ -230,7 +226,6 @@ const Leagues = ({
                     Grammy League
                     </h4>
                   <p className="m-0 text-sm">
-                    These artists harken back to the classics.
                     </p>
                 </div>
               </div>
@@ -252,7 +247,6 @@ const Leagues = ({
                     Robust Workflow
                     </h4>
                   <p className="m-0 text-sm">
-                    Find the best music for maxing out your productivity.
                     </p>
                 </div>
               </div>
@@ -286,7 +280,6 @@ const Leagues = ({
                 Pop Kings
                 </h4>
               <p className="m-0 text-sm">
-                Find out who's the best in the biggest music genre.
                 </p>
             </div>
           </div>
@@ -308,7 +301,6 @@ const Leagues = ({
                 Jazz Supremes
                 </h4>
               <p className="m-0 text-sm">
-                Prove who has the most groove.
                 </p>
             </div>
           </div>
@@ -330,7 +322,6 @@ const Leagues = ({
                 Rookie Championship
                 </h4>
               <p className="m-0 text-sm">
-                    Perfect for your first league.
                 </p>
             </div>
           </div>

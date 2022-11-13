@@ -2,13 +2,17 @@
 .item1 { grid-area: header; }
 .item2 {
 	grid-area: menu;
-	width: 300px;
+	width: 1000px;
 }
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 
 .ind-img{
+	width: 5000px;
+}
+
+.graph-img{
 	width: 5000px;
 }
 .grid-container {
@@ -28,7 +32,7 @@
 }
 
 .para-musa {
-    text-size-adjust: 24px;
+    text-size-adjust: 12px;
 }
 
 .screen-reader {

@@ -23,12 +23,17 @@ contract NftMarketplace is TRC721, TRC165, ReentrancyGuard {
 
     // State Variables
 
+    // Mapping of NFT Contract address to Token ID that point to listing struct.
+    // Each Token ID, points to data that identifies seller of that token and price
     mapping(address => mapping(uint256 => Listing)) private s_listings;
+
+    // Mapping between seller's address & amount they earned
     mapping(address => uint256) private s_proceeds;
 
 
     // Modifiers
 
+    // Token ID is not listed
     modifier notListed(address nftAddress, uint256 tokenId) {
         Listing memory listing = s_listings[nftAddress][tokenId];
         if (listing.price > 0) {
@@ -104,7 +109,7 @@ contract NftMarketplace is TRC721, TRC165, ReentrancyGuard {
     }
 
     /*
-     * Method for updating listing
+     * Method to allow the seller to update listing
      * @param nftAddress Address of NFT contract
      * @param tokenId Token ID of NFT
      * @param newPrice Price in Wei of the item
@@ -119,7 +124,8 @@ contract NftMarketplace is TRC721, TRC165, ReentrancyGuard {
     }
 
     /*
-     * Method for withdrawing proceeds from sales
+     * Method for withdrawing proceeds from sales.
+     * Sending the caller of the method whatever their balance in the s_proceeds state variable is.
      */
     function withdrawProceeds() external {
         uint256 proceeds = s_proceeds[msg.sender];
@@ -127,16 +133,18 @@ contract NftMarketplace is TRC721, TRC165, ReentrancyGuard {
             revert NoProceeds();
         }
         s_proceeds[msg.sender] = 0;
-        (bool success, ) = payable(msg.sender).call{value: proceeds}("");
+        (bool success, ) = payable(msg.sender).call{value: proceeds}("");   // sending value to caller addresses
         require(success, "Transfer failed");
     }
 
     /* ==== Getter Function ==== */
 
+    // For finding who is the seller & how much the token is listed for
     function getListing(address nftAddress, uint256 tokenId) external view returns (Listing memory) {
         return s_listings[nftAddress][tokenId];
     }
 
+    // how much a seller has earned i.e. Sale Proceeds
     function getProceeds(address seller) external view returns (uint256) {
         return s_proceeds[seller];
     }

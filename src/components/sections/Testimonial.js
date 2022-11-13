@@ -45,7 +45,7 @@ const Testimonial = ({
 
   const sectionHeader = {
     title: 'Support your favorite Artist',
-    paragraph: 'One liner about that.'
+    paragraph: 'Don’t feel like betting on an artist? Donate directly to your favorite artists to support their music.'
   };
 
   return (

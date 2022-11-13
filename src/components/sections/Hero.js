@@ -61,10 +61,10 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-          <h1>Get your skin in the game</h1>
+          <h1>Invest, Compete, Uplift </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Put a one liner here about the app here and say something about how this will be an immersive experience for the users.
+              Put a competitive twist on supporting your favorite artists.
                 </p>
             </div>
            
