@@ -65,7 +65,7 @@ const Explore = ({ className,
         
           const leaguesHeader = {
             title: 'Mint your NFTs',
-            paragraph: 'Put a one liner here about that.'
+            paragraph: ''
           };
 
         return (
